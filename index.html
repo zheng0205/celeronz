@@ -3,8 +3,48 @@
 <head>
 <meta charset="utf-8">
 <title>CSS Skil</title>
+<style>
+.heihei{
+  position:absolute;
+  margin: 0 auto;
+  width: 200px;
+  background-color: rgba(0, 188, 212, 0.23);
+  border-radius: 50%;
+  line-height: 200px;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  animation-name: first;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+@keyframes first
+{
+  0%   {background: #6995d6; left:0px; top:0px;}
+  25%  {background: #81efbc; left:200px; top:0px;}
+  50%  {background: #00d0ff; left:200px; top:200px;}
+  75%  {background: #3399ff; left:0px; top:200px;}
+  100% {background: #ccc; left:0px; top:0px;}
+}
+.fa{
+  width: 480px;
+  margin: 0 auto;
+  height: 480px;
+  position: relative;
+}
+</style>
 </head>
 
 <body>
+<div class="fa">
+<div class="heihei">
+Welcome To Celeronz
+</div>
+</div>
 </body>
 </html>
